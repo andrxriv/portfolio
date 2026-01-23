@@ -12,16 +12,16 @@ const renderText = (text, className, baseWeight = 400) => {
     return [ ... text].map((char, i) => (
         <span 
             key={i}
-            className={className} style={{
-            fontVariationSettings: `'wght' ${baseWeight}` }}
+            className={className} 
+            style={{ fontVariationSettings: `'wght' ${baseWeight}` }}
         >
-            {char === " " ? '\u00A0' : char}
+            {char === " " ? "\u00A0" : char}
         </span>
     ));
 }
 
 const setupTextHover = (container, type) => {
-    if(!container) return;
+    if(!container) return () => {};
 
     const letters = container.querySelectorAll("span");
     const { min, max, default: base } = FONT_WEIGHTS[type];
@@ -55,7 +55,7 @@ const setupTextHover = (container, type) => {
     }
 };
 
-const welcome = () => {
+const Welcome = () => {
     const titleRef = useRef(null);
     const subtitleRef = useRef(null);
 
@@ -64,8 +64,8 @@ const welcome = () => {
         const subtitleCleanup = setupTextHover(subtitleRef.current, 'subtitle');
 
         return () => {
-            subtitleCleanup();
-            titleCleanup();
+            subtitleCleanup?.();
+            titleCleanup?.();
         }
     }, []);
 
@@ -88,4 +88,4 @@ const welcome = () => {
   )
 }
 
-export default welcome
+export default Welcome
