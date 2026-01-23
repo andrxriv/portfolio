@@ -1,12 +1,11 @@
-import { Navbar, Welcome } from "#components"
-
 const App = () => {
   return (
-    <main>
-        <Navbar />
-        <Welcome />
-    </main>
-  );
-};
+    <div>
+        <h1 className="text-3xl fond-bold underline">
+            Welcome to my MacFolio
+        </h1>
+    </div>
+  )
+}
 
 export default App;
