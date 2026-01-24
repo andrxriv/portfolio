@@ -5,11 +5,19 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { Draggable } from 'gsap/Draggable';
 
+gsap.registerPlugin(Draggable);
+
 const WindowWrapper = (Component, windowKey) => {
     const Wrapped = (props) => {
-        const { focusWindow, windows } = useWindowStore();
-        const { isOpen, zIndex} = windows[windowKey];
-        const ref = useRef(null);
+            const { focusWindow, windows } = useWindowStore();
+            const windowState = windows[windowKey];    
+            if (!windowState) {
+                console.warn(`WindowWrapper: Unknown window key "${windowKey}"`);
+                return null;
+            }
+
+            const { isOpen, zIndex } = windowState;
+            const ref = useRef(null);
         
         useGSAP(() => {
             const el = ref.current;
