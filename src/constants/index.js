@@ -101,30 +101,38 @@ const blogPosts = [
 
 const techStack = [
   {
-    category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript"],
+    category: "Languages",
+    items: ["Python", "JavaScript", "C++", "C"],
   },
   {
-    category: "Mobile",
-    items: ["React Native", "Expo"],
+    category: "Cloud Environment",
+    items: [
+        "AWS",
+        "Azure"
+    ],
   },
   {
-    category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    category: "ML / GenAI",
+    items: [
+      "LLMs",
+      "RAG",
+      "AI Agents"
+    ],
   },
   {
-    category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    category: "Infrastructure as Code",
+    items: ["Terraform", "CloudFormation", "AWS CDK"],
   },
   {
-    category: "Database",
-    items: ["MongoDB", "PostgreSQL"],
+    category: "Libraries",
+    items: ["NumPy", "Pandas", "Matplotlib"],
   },
   {
     category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker"],
+    items: ["Linux", "Git", "Jenkins", "Docker"],
   },
 ];
+
 
 const socials = [
   {
@@ -237,7 +245,7 @@ const WORK_LOCATION = {
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
-          position: "top-5 left-10",
+          position: "top-15 left-10",
           description: [
             "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
             "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
@@ -252,7 +260,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
-          position: "top-10 right-20",
+          position: "top-10 right-25",
         },
         {
           id: 4,
@@ -260,7 +268,7 @@ const WORK_LOCATION = {
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
-          position: "top-52 right-80",
+          position: "top-45 right-30",
           imageUrl: "/images/project-1.png",
         },
         {
@@ -270,7 +278,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "fig",
           href: "https://google.com",
-          position: "top-60 right-20",
+          position: "top-52 right-100"
         },
       ],
     },
@@ -305,7 +313,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
-          position: "top-20 left-20",
+          position: "top-15 left-20",
         },
         {
           id: 4,
@@ -323,7 +331,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "fig",
           href: "https://google.com",
-          position: "top-60 left-5",
+          position: "top-50 left-5",
         },
       ],
     },
@@ -376,65 +384,65 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "fig",
           href: "https://google.com",
-          position: "top-60 right-20",
+          position: "top-40 right-20",
         },
       ],
     },
   ],
 };
 
-const ABOUT_LOCATION = {
-  id: 2,
-  type: "about",
-  name: "About me",
-  icon: "/icons/info.svg",
-  kind: "folder",
-  children: [
-    {
-      id: 1,
-      name: "me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-10 left-5",
-      imageUrl: "/images/adrian.jpg",
-    },
-    {
-      id: 2,
-      name: "casual-me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-28 right-72",
-      imageUrl: "/images/adrian-2.jpg",
-    },
-    {
-      id: 3,
-      name: "conference-me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
-    },
-    {
-      id: 4,
-      name: "about-me.txt",
-      icon: "/images/txt.png",
-      kind: "file",
-      fileType: "txt",
-      position: "top-60 left-5",
-      subtitle: "Meet the Developer Behind the Code",
-      image: "/images/adrian.jpg",
-      description: [
-        "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-        "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-        "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-        "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
-      ],
-    },
-  ],
-};
+// const ABOUT_LOCATION = {
+//   id: 2,
+//   type: "about",
+//   name: "About me",
+//   icon: "/icons/info.svg",
+//   kind: "folder",
+//   children: [
+//     {
+//       id: 1,
+//       name: "me.png",
+//       icon: "/images/image.png",
+//       kind: "file",
+//       fileType: "img",
+//       position: "top-10 left-5",
+//       imageUrl: "/images/adrian.jpg",
+//     },
+//     {
+//       id: 2,
+//       name: "casual-me.png",
+//       icon: "/images/image.png",
+//       kind: "file",
+//       fileType: "img",
+//       position: "top-28 right-72",
+//       imageUrl: "/images/adrian-2.jpg",
+//     },
+//     {
+//       id: 3,
+//       name: "conference-me.png",
+//       icon: "/images/image.png",
+//       kind: "file",
+//       fileType: "img",
+//       position: "top-52 left-80",
+//       imageUrl: "/images/adrian-3.jpeg",
+//     },
+//     {
+//       id: 4,
+//       name: "about-me.txt",
+//       icon: "/images/txt.png",
+//       kind: "file",
+//       fileType: "txt",
+//       position: "top-60 left-5",
+//       subtitle: "Meet the Developer Behind the Code",
+//       image: "/images/adrian.jpg",
+//       description: [
+//         "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
+//         "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
+//         "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
+//         "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+//       ],
+//     },
+//   ],
+// };
 
 const RESUME_LOCATION = {
   id: 3,
@@ -485,7 +493,7 @@ const TRASH_LOCATION = {
 
 export const locations = {
   work: WORK_LOCATION,
-  about: ABOUT_LOCATION,
+//   about: ABOUT_LOCATION,
   resume: RESUME_LOCATION,
   trash: TRASH_LOCATION,
 };
