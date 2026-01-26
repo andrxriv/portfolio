@@ -85,7 +85,7 @@ const Welcome = () => {
             <p>This portfolio is designed for desktop/tablet screens</p>
         </div>
     </section>
-  )
+  );
 }
 
-export default Welcome
+export default Welcome;

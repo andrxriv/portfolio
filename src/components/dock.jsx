@@ -48,8 +48,8 @@ const Dock = () => {
                     y: 0, 
                     duration: 0.3, 
                     ease: "power1.out"
-            }),
-        )
+            })
+        );
 
 
         dock.addEventListener('mousemove', handleMouseMove);
@@ -68,7 +68,7 @@ const Dock = () => {
         if(!window) {
             return;
         }
-        
+
         if(window.isOpen){
             closeWindow(app.id);
         } else {
@@ -109,7 +109,7 @@ const Dock = () => {
             <Tooltip id="dock-tooltip" place="top" className='tooltip' />
         </div>
     </section>
-  )
+  );
 }
 
 export default Dock;
