@@ -8,7 +8,7 @@ const Terminal = () => {
   return (
     <>
         <div id="window-header">
-            <p><WindowControls target="terminal" /></p>
+            <WindowControls target="terminal" />
             <h2>Tech Stack</h2>
         </div>
 
