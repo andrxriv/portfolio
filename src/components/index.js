@@ -1,6 +1,6 @@
-import Navbar from "./navbar";
-import Welcome from "./welcome";
-import Dock  from "./dock";
+import Navbar from "./Navbar";
+import Welcome from "./Welcome";
+import Dock  from "./Dock";
 import WindowControls from "./WindowControls";
 import Home from "./Home";
 

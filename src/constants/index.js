@@ -312,7 +312,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+          href: "https://ai-resume-analyzer-andrxriv.netlify.app/",
           position: "top-15 left-20",
         },
         {
@@ -330,7 +330,7 @@ const WORK_LOCATION = {
           icon: "/images/plain.png",
           kind: "file",
           fileType: "fig",
-          href: "https://google.com",
+          href: "https://www.figma.com/design/0Vm0OrCLCBt7fikqsOjCxn/AI-Resume-Analyzer?node-id=2-2&t=TtlBDnepoD8PBah5-1",
           position: "top-50 left-5",
         },
       ],
