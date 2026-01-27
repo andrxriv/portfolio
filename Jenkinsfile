@@ -5,7 +5,18 @@ pipeline {
         IMAGE = 'node:20-alpine'
     }
 
+    options {
+        skipDefaultCheckout(true)
+    }
+
   stages {
+
+    stage('Clean & Checkout') {
+      steps {
+        cleanWs()
+        checkout scm
+      }
+    }
 
     stage('Install') {
       agent {
